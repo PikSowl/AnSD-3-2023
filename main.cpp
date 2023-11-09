@@ -19,7 +19,6 @@ void tref(int y, int &x){
 
 int main() {
     RusLoc;
-
     int x = 100;
     wcout << L"Введите x" << endl;
     wcin >> x;
