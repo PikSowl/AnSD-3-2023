@@ -13,8 +13,23 @@ void tref(int y, int &x){
     if (y > x) return;
     wcout << y << " ";
     tref((y*3), x);
-    tref((y*5), x);
-    tref((y*7), x);
+    duo((y*5), x);
+    self((y*7), x);
+}
+
+void duo(int y, int &x){
+    RusLoc;
+    if (y > x) return;
+    wcout << y << " ";
+    duo((y*5), x);
+    self((y*7), x);
+}
+
+void self(int y, int &x){
+    RusLoc;
+    if (y > x) return;
+    wcout << y << " ";
+    selff((y*7), x);
 }
 
 int main() {
